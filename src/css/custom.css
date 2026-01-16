@@ -5,6 +5,85 @@
  */
 
 /* You can override the default Infima variables here. */
+@font-face {
+  font-family: 'MiSans';
+  src: url('./fonts/MiSansVF.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+  --ifm-font-family-base: 'MiSans', system-ui, -apple-system, sans-serif;
+  --ifm-font-weight-base: 450; 
+  --ifm-font-weight-bold: 700;
+}
+
+/* src/css/custom.css */
+
+body {
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+
+  font-variation-settings: "wght" var(--ifm-font-weight-base);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  body {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+body {
+  --base-wght: 450; 
+  font-variation-settings: "wght" var(--base-wght);
+}
+
+strong, b, h1, h2, h3, h4, h5, h6 {
+  --bold-wght: 650; 
+  font-variation-settings: "wght" var(--bold-wght);
+  font-weight: normal;
+}
+
+.admonition-heading strong {
+  font-variation-settings: "wght" 800;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  font-variation-settings: "wght" 650;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em; 
+}
+
+h1 {
+  font-variation-settings: "wght" 750;
+  font-size: 2.5rem;
+  margin-top: 0; 
+}
+
+h2 {
+  font-variation-settings: "wght" 700;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+h3 {
+  font-variation-settings: "wght" 600;
+}
+
+[data-theme='dark'] h1, 
+[data-theme='dark'] h2, 
+[data-theme='dark'] h3 {
+  color: #e3e3e3;
+}
+
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -27,4 +106,184 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+mark {
+  background: linear-gradient(180deg, transparent 50%, rgba(255, 235, 59, 0.5) 50%);
+  padding: 0 4px; 
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  color: inherit;
+  padding: 0;
+}
+
+[data-theme='dark'] mark {
+  background: linear-gradient(180deg, transparent 50%, rgba(255, 167, 38, 0.4) 50%);
+  padding: 0 4px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  color: inherit;
+}
+
+mark.pink {
+  background: linear-gradient(180deg, transparent 50%, rgba(240, 98, 146, 0.4) 50%);
+}
+
+mark.orange {
+  background: linear-gradient(180deg, transparent 50%, rgba(255, 112, 67, 0.4) 50%);
+}
+
+[data-theme='dark'] mark.pink {
+  background: linear-gradient(180deg, transparent 50%, rgba(244, 143, 177, 0.3) 50%);
+}
+[data-theme='dark'] mark.orange {
+  background: linear-gradient(180deg, transparent 50%, rgba(255, 138, 101, 0.3) 50%);
+}
+
+.admonition {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left-width: 6px; 
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.admonition-note {
+  border-left-color: #3498db;
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+.admonition-tip {
+  border-left-color: #2ecc71;
+  background-color: rgba(46, 204, 113, 0.05);
+}
+
+.admonition-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+[data-theme='dark'] .admonition {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.prism-code {
+  border-radius: 12px !important; 
+  padding: 1.2rem !important;
+  font-size: 0.95rem;
+  font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module,
+[class*='codeBlockTitle'] {
+  background-color: #24292e !important; 
+  color: #ffffff !important;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+  padding: 0.6rem 1.2rem !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[class*='codeBlockContainer'] [class*='codeBlockContent'] {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(255, 255, 255, 0.1) !important; 
+  display: block;
+  margin: 0 -1.2rem;
+  padding: 0 1.2rem;
+  border-left: 4px solid #3578e5; 
+}
+
+.prism-code::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.prism-code::-webkit-scrollbar-track {
+  background: transparent;
+}
+.prism-code::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, 0.3);
+  border-radius: 10px;
+}
+.prism-code::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 120, 120, 0.5);
+}
+
+[data-theme='dark'] .prism-code {
+  background-color: #1e1e1e !important; 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(100, 150, 255, 0.15) !important; 
+  border-left-color: #4dabf7;
+}
+
+del, s {
+  color: var(--ifm-color-emphasis-500); 
+  text-decoration: line-through;
+  opacity: 0.7; 
+  transition: opacity 0.3s ease; 
+}
+
+del:hover, s:hover {
+  opacity: 1;
+}
+
+[data-theme='dark'] del, 
+[data-theme='dark'] s {
+  color: var(--ifm-color-emphasis-600);
+  opacity: 0.5;
+}
+
+del, s {
+  font-variation-settings: "wght" 300; 
+}
+
+del {
+  color: #999;
+  text-decoration: line-through;
+  text-decoration-color: rgba(255, 170, 255, 0.5); 
+  text-decoration-thickness: 5px; 
+}
+
+del, s {
+  color: var(--ifm-color-emphasis-500);
+  opacity: 0.6;
+  font-variation-settings: "wght" 350; 
+  text-decoration: line-through;
+  text-decoration-color: currentColor; 
+  
+  transition: all 0.3s ease;
+  cursor: help; 
+}
+
+del:hover, s:hover {
+  color: var(--ifm-color-emphasis-900);
+  opacity: 1;
+  font-variation-settings: "wght" 450; 
+  text-decoration: none;
+  text-decoration-color: rgba(255, 170, 255, 0.3); 
+}
+
+[data-theme='dark'] del, 
+[data-theme='dark'] s {
+  color: var(--ifm-color-emphasis-600);
+  opacity: 0.4;
+}
+
+[data-theme='dark'] del:hover, 
+[data-theme='dark'] s:hover {
+  color: #ffffff;
+  opacity: 1;
 }

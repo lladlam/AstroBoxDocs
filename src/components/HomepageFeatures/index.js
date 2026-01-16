@@ -4,42 +4,46 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '跨平台支持',
+    // 由于AstroBox官网图片为webp格式，无法转化为svg，故我进行了图片导入魔改
+    img: require('@site/static/img/astronaut.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        AstroBox 基于 Rust & Tauri 以及 Next.js 构建，一套代码全端可用。
+        支持 <strong>Windows、macOS、Linux、Android、iOS、iPadOS</strong> 等多个平台，
+        打破传统工具“仅限 Android”的限制。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '资源社区丰富',
+    img: require('@site/static/img/plugin.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        不仅有官方数据源，还有 N 多个插件提供数据源支持。
+        可下载海量表盘、快应用，<strong>一键批量安装</strong>，打破数据源壁垒。
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: '设备管理全能',
+    img: require('@site/static/img/device.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        安装表盘、快应用，刷写固件，<strong>拖拽文件即可加入任务队列</strong>，按顺序一键安装。
+        连接设备后，部分手机互联操作可由 AstroBox 接管，无需频繁切换应用。
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+// 在这里我修改了 Feature 组件的参数，将 Svg 改为 img
+function Feature({img, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {/* 我在这里将 <Svg /> 改为 <img src={img} /> */}
+        <img src={img} className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

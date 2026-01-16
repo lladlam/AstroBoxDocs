@@ -85,21 +85,15 @@ const config = {
       navbar: {
         title: 'AstroBox第三方帮助文档',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'AstroBox Logo',
+          src: 'img/logo.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/lladlam/astroboxdocs',
-            label: 'GitHub',
-            position: 'right',
+            label: '文档',
           },
         ],
       },
@@ -107,38 +101,21 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '链接',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'QQ群',
+                href: 'https://qm.qq.com/q/JceseeqRk4',
+              },
+              {
+                label: '爱发电',
+                href: 'https://afdian.com/a/astralsight',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '更多',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/lladlam/astroboxdocs',
@@ -146,7 +123,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} lladlam Built with Docusaurus.`,
+        copyright: `版权所有 © ${new Date().getFullYear()} AstralSightStudios , The site made with ❤ by lladlam ，Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
