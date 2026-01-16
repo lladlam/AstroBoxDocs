@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'BandBBS第三方帮助文档',
-  tagline: '为AstroBox,表盘自定义工具与快应用开发者提供用户使用文档',
+  title: 'Astro第三方帮助文档',
+  tagline: '为AstroBox与快应用开发者提供用户使用文档',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
