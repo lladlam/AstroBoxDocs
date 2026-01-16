@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Astro第三方帮助文档',
+  title: 'AstroBox第三方帮助文档',
   tagline: '为AstroBox与快应用开发者提供用户使用文档',
   favicon: 'img/favicon.ico',
 
@@ -83,7 +83,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'BandBBS第三方帮助文档',
+        title: 'AstroBox第三方帮助文档',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
