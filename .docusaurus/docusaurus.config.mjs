@@ -28,7 +28,7 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "url": "https://github.com",
+  "url": "https://abdocs.lladlam.top",
   "baseUrl": "/",
   "organizationName": "lladlam",
   "projectName": "AstroBoxDocs",
@@ -47,7 +47,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.js",
-          "editUrl": "https://github.com/lladlam/astroboxdocs"
+          "editUrl": "https://github.com/lladlam/astroboxdocs/tree/main"
         },
         "blog": {
           "showReadingTime": true,
@@ -58,7 +58,7 @@ export default {
             ],
             "xslt": true
           },
-          "editUrl": "https://github.com/lladlam/astroboxdocs",
+          "editUrl": "https://github.com/lladlam/astroboxdocs/tree/main",
           "onInlineTags": "warn",
           "onInlineAuthors": "warn",
           "onUntruncatedBlogPosts": "warn"
@@ -145,7 +145,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2026 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2026 lladlam Built with Docusaurus."
     },
     "prism": {
       "theme": {
