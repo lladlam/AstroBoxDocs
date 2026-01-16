@@ -1,0 +1,27 @@
+{
+  "id": "tutorial-basics/deploy-your-site",
+  "title": "部署您的站点",
+  "description": "Docusaurus 是一个 静态站点生成器（也称为 Jamstack）。",
+  "source": "@site/docs/tutorial-basics/deploy-your-site.md",
+  "sourceDirName": "tutorial-basics",
+  "slug": "/tutorial-basics/deploy-your-site",
+  "permalink": "/docs/tutorial-basics/deploy-your-site",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/lladlam/astroboxdocs/docs/tutorial-basics/deploy-your-site.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Markdown 功能",
+    "permalink": "/docs/tutorial-basics/markdown-features"
+  },
+  "next": {
+    "title": "恭喜！",
+    "permalink": "/docs/tutorial-basics/congratulations"
+  }
+}
