@@ -12,6 +12,7 @@ ehthumbs.db
 dist/
 build/
 out/
+.docusaurus/
 
 # 日志文件
 *.log
