@@ -61,10 +61,6 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-	tableOfContents: {
-	  minHeadingLevel: 1, 
-	  maxHeadingLevel: 4, // 允许右侧目录显示到 H4
-	},
       
       // --- Algolia 搜索与 AI 配置 ---
       algolia: {

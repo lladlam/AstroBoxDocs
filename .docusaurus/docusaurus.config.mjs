@@ -79,10 +79,6 @@ export default {
       "defaultMode": "light",
       "disableSwitch": false
     },
-    "tableOfContents": {
-      "minHeadingLevel": 2,
-      "maxHeadingLevel": 4
-    },
     "algolia": {
       "appId": "AXZ3GZ11QM",
       "apiKey": "e56138bb932c2dc41733485c2639238f",
@@ -358,7 +354,11 @@ export default {
         "groupByYear": true
       }
     },
-    "metadata": []
+    "metadata": [],
+    "tableOfContents": {
+      "minHeadingLevel": 2,
+      "maxHeadingLevel": 3
+    }
   },
   "baseUrlIssueBanner": true,
   "onBrokenAnchors": "warn",
