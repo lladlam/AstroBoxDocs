@@ -119,16 +119,22 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'a25'),
+    component: ComponentCreator('/docs', '5f4'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '105'),
+        component: ComponentCreator('/docs', '192'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '92a'),
+            component: ComponentCreator('/docs', 'e32'),
             routes: [
+              {
+                path: '/docs/astrobox-for-ios/started',
+                component: ComponentCreator('/docs/astrobox-for-ios/started', '297'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs/astrobox/account',
                 component: ComponentCreator('/docs/astrobox/account', 'f7f'),
@@ -144,6 +150,18 @@ export default [
               {
                 path: '/docs/astrobox/disclaimer',
                 component: ComponentCreator('/docs/astrobox/disclaimer', 'bec'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/astrobox/function',
+                component: ComponentCreator('/docs/astrobox/function', '594'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/astrobox/other',
+                component: ComponentCreator('/docs/astrobox/other', '1d5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -168,6 +186,12 @@ export default [
               {
                 path: '/docs/category/astrobox',
                 component: ComponentCreator('/docs/category/astrobox', '150'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/category/astrobox-for-ios',
+                component: ComponentCreator('/docs/category/astrobox-for-ios', '61b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

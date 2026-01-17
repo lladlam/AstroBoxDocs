@@ -104,3 +104,9 @@ Bandbbs 的资源点击下载后需要选择下拉框里的文件再下载安装
 4. 点击红圈所示按钮发送表盘到设备即可
 
 ![img](./img/resource/q13-4.png)
+
+:::note
+
+本教程由Yulimfish，川.，wuhaiqi等人编写，本人（lladlam）仅为第三方转载，著作权归Yulimfish，川.，wuhaiqi等人所有
+
+:::

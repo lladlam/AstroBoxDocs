@@ -11,6 +11,11 @@
           "mainDocId": "start",
           "docs": [
             {
+              "id": "astrobox-for-ios/started",
+              "path": "/docs/astrobox-for-ios/started",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "astrobox/account",
               "path": "/docs/astrobox/account",
               "sidebar": "tutorialSidebar"
@@ -23,6 +28,16 @@
             {
               "id": "astrobox/disclaimer",
               "path": "/docs/astrobox/disclaimer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "astrobox/function",
+              "path": "/docs/astrobox/function",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "astrobox/other",
+              "path": "/docs/astrobox/other",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -53,6 +68,11 @@
             {
               "id": "/category/快应用",
               "path": "/docs/category/快应用",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/astrobox-for-ios",
+              "path": "/docs/category/astrobox-for-ios",
               "sidebar": "tutorialSidebar"
             }
           ],

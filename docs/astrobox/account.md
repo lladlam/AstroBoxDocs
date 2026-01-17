@@ -48,6 +48,6 @@ https://github.com/AstralSightStudios/AstroBox-Public/blob/main/src-tauri/src/au
 
 :::note
 
-本教程由蠢鱼（Yulimfish）编写，本网站仅为第三方转载，著作权归Yulimfish所有
+本教程由Yulimfish，川.，wuhaiqi等人编写，本人（lladlam）仅为第三方转载，著作权归Yulimfish，川.，wuhaiqi等人所有
 
 :::

@@ -255,18 +255,22 @@
       "plugin": "plugin---searchc-14-0ea"
     }
   },
-  "/docs-a25": {
+  "/docs-5f4": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-105": {
+  "/docs-192": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-92a": {
+  "/docs-e32": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/astrobox-for-ios/started-297": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-astrobox-for-ios-started-0-a-2-fee"
   },
   "/docs/astrobox/account-f7f": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -279,6 +283,14 @@
   "/docs/astrobox/disclaimer-bec": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-astrobox-disclaimer-41-c-4e7"
+  },
+  "/docs/astrobox/function-594": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-astrobox-function-69-d-70f"
+  },
+  "/docs/astrobox/other-1d5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-astrobox-other-416-fbc"
   },
   "/docs/astrobox/resource-bef": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -295,6 +307,10 @@
   "/docs/category/astrobox-150": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-astrobox-6-ff-4e4"
+  },
+  "/docs/category/astrobox-for-ios-61b": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-astrobox-for-ios-107-2af"
   },
   "/docs/quickapp/started-12e": {
     "__comp": "__comp---theme-doc-item-178-a40",
