@@ -102,7 +102,7 @@ const config = {
                 href: 'https://qm.qq.com/q/JceseeqRk4',
               },
               {
-                label: '爱发电',
+                label: 'AstroBox爱发电',
                 href: 'https://afdian.com/a/astralsight',
               },
             ],
@@ -114,8 +114,29 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/lladlam/astroboxdocs',
               },
+			  {
+			    label: '聪明猫的爱发电',
+			    href: 'https://afdian.com/item/18dde340bc6911f0a0515254001e7c00',
+			  },
+			  {
+			    label: 'lladlam的爱发电',
+			    href: 'https://www.lladlam.top/posts/afdiandocs/',
+			  },
             ],
           },
+		  {
+			title: '友链',
+			items: [
+			  {
+				label: '米坛社区',
+				href: 'https://bandbbs.cn',
+			  },
+			  {
+				label: '小米社区',
+				href: 'https://xiaomi.cn',
+			  },
+			],
+		  },
         ],
         copyright: `版权所有 © ${new Date().getFullYear()} AstralSightStudios , The site made with ❤ by lladlam ，Built with Docusaurus.`,
       },
