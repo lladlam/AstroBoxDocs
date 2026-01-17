@@ -66,13 +66,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/快应用",
-              "path": "/docs/category/快应用",
+              "id": "/category/astrobox-for-ios",
+              "path": "/docs/category/astrobox-for-ios",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/astrobox-for-ios",
-              "path": "/docs/category/astrobox-for-ios",
+              "id": "/category/快应用",
+              "path": "/docs/category/快应用",
               "sidebar": "tutorialSidebar"
             }
           ],
