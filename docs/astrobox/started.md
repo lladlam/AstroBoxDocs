@@ -26,7 +26,7 @@ sudo xattr -r -d com.apple.quarantine /Applications/AstroBox.app
 
 首先去官网重新下载安装包，看看安装包有没有在下载过程中损坏了。
 
-如果不行，那就是 msi 的安装权限问题，请你按照以下流程操作：
+如果不行，那就是 msi 的安装权限问题。<mark class="orange">首先先确认你是否将主程序解压后再开始运行，如没有请先解压后再试</mark>，如还不行就请你按照以下流程操作：
 
 
 <details>
@@ -119,6 +119,6 @@ sudo xattr -r -d com.apple.quarantine /Applications/AstroBox.app
 
 :::note
 
-本教程由Yulimfish，川.，wuhaiqi等人编写，本人（lladlam）仅为第三方转载，著作权归Yulimfish，川.，wuhaiqi等人所有
+本教程由Yulimfish，川.，wuhaiqi等人编写，lladlam转载时经过修改，著作权归Yulimfish，川.，wuhaiqi等人所有
 
 :::
