@@ -1,12 +1,5 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -14,27 +7,18 @@ const config = {
   tagline: '为AstroBox与快应用开发者提供用户使用文档',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
   url: 'https://abdocs.lladlam.top',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'lladlam', // Usually your GitHub org/user name.
-  projectName: 'AstroBoxDocs', // Usually your repo name.
+  organizationName: 'lladlam',
+  projectName: 'AstroBoxDocs',
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh',
     locales: ['zh'],
@@ -47,10 +31,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/lladlam/astroboxdocs/tree/main',
+          editUrl: 'https://github.com/lladlam/astroboxdocs/tree/main',
         },
         blog: {
           showReadingTime: true,
@@ -58,11 +39,7 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/lladlam/astroboxdocs/tree/main',
-          // Useful options to enforce blogging best practices
+          editUrl: 'https://github.com/lladlam/astroboxdocs/tree/main',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -77,11 +54,25 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
         respectPrefersColorScheme: true,
       },
+      
+      // --- Algolia 搜索与 AI 配置 ---
+      algolia: {
+        appId: 'AXZ3GZ11QM',
+        apiKey: 'e56138bb932c2dc41733485c2639238f',
+        indexName: 'AstroBoxDocs',
+        
+        // 使用最新的 Ask AI 助手 ID
+        askAi: 'q9e1c7kBLvhZ',
+        
+        contextualSearch: true,
+        insights: true,
+        searchPagePath: 'search',
+      },
+      
       navbar: {
         title: 'AstroBox第三方帮助文档',
         logo: {

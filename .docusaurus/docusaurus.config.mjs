@@ -76,6 +76,21 @@ export default {
       "defaultMode": "light",
       "disableSwitch": false
     },
+    "algolia": {
+      "appId": "AXZ3GZ11QM",
+      "apiKey": "e56138bb932c2dc41733485c2639238f",
+      "indexName": "AstroBoxDocs",
+      "askAi": {
+        "assistantId": "q9e1c7kBLvhZ",
+        "indexName": "AstroBoxDocs",
+        "apiKey": "e56138bb932c2dc41733485c2639238f",
+        "appId": "AXZ3GZ11QM"
+      },
+      "contextualSearch": true,
+      "insights": true,
+      "searchPagePath": "search",
+      "searchParameters": {}
+    },
     "navbar": {
       "title": "AstroBox第三方帮助文档",
       "logo": {

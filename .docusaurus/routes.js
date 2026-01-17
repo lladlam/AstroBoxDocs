@@ -113,16 +113,21 @@ export default [
     exact: true
   },
   {
+    path: '/search',
+    component: ComponentCreator('/search', '5de'),
+    exact: true
+  },
+  {
     path: '/docs',
-    component: ComponentCreator('/docs', 'd6c'),
+    component: ComponentCreator('/docs', '63b'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'cba'),
+        component: ComponentCreator('/docs', '9d5'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '3ec'),
+            component: ComponentCreator('/docs', 'bc5'),
             routes: [
               {
                 path: '/docs/astrobox/disclaimer',
@@ -137,8 +142,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/category/快应用',
+                component: ComponentCreator('/docs/category/快应用', '993'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/category/astrobox',
                 component: ComponentCreator('/docs/category/astrobox', '150'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/quickapp/started',
+                component: ComponentCreator('/docs/quickapp/started', '12e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

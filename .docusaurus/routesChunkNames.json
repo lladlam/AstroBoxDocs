@@ -249,17 +249,23 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-d6c": {
+  "/search-5de": {
+    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__context": {
+      "plugin": "plugin---searchc-14-0ea"
+    }
+  },
+  "/docs-63b": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-cba": {
+  "/docs-9d5": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-3ec": {
+  "/docs-bc5": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/astrobox/disclaimer-bec": {
@@ -270,9 +276,17 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-astrobox-started-4-ac-572"
   },
+  "/docs/category/快应用-993": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-快应用-376-ec6"
+  },
   "/docs/category/astrobox-150": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-astrobox-6-ff-4e4"
+  },
+  "/docs/quickapp/started-12e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-quickapp-started-405-1ea"
   },
   "/docs/start-023": {
     "__comp": "__comp---theme-doc-item-178-a40",
