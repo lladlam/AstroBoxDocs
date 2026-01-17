@@ -45,7 +45,10 @@ const config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+			'./static/fonts/misans/result.css',  // 1. 先加载字体定义
+			require.resolve('./src/css/custom.css'), // 2. 再加载你的样式 
+		  ] ,
         },
       }),
     ],
@@ -58,6 +61,10 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
+	tableOfContents: {
+	  minHeadingLevel: 1, 
+	  maxHeadingLevel: 4, // 允许右侧目录显示到 H4
+	},
       
       // --- Algolia 搜索与 AI 配置 ---
       algolia: {

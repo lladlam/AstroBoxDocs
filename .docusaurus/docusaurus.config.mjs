@@ -64,7 +64,10 @@ export default {
           "onUntruncatedBlogPosts": "warn"
         },
         "theme": {
-          "customCss": "./src/css/custom.css"
+          "customCss": [
+            "./static/fonts/misans/result.css",
+            "E:\\Test\\AstroBoxDocs\\my-website\\src\\css\\custom.css"
+          ]
         }
       }
     ]
@@ -75,6 +78,10 @@ export default {
       "respectPrefersColorScheme": true,
       "defaultMode": "light",
       "disableSwitch": false
+    },
+    "tableOfContents": {
+      "minHeadingLevel": 2,
+      "maxHeadingLevel": 4
     },
     "algolia": {
       "appId": "AXZ3GZ11QM",
@@ -351,11 +358,7 @@ export default {
         "groupByYear": true
       }
     },
-    "metadata": [],
-    "tableOfContents": {
-      "minHeadingLevel": 2,
-      "maxHeadingLevel": 3
-    }
+    "metadata": []
   },
   "baseUrlIssueBanner": true,
   "onBrokenAnchors": "warn",

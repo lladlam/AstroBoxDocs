@@ -11,8 +11,23 @@
           "mainDocId": "start",
           "docs": [
             {
+              "id": "astrobox/account",
+              "path": "/docs/astrobox/account",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "astrobox/connect",
+              "path": "/docs/astrobox/connect",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "astrobox/disclaimer",
               "path": "/docs/astrobox/disclaimer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "astrobox/resource",
+              "path": "/docs/astrobox/resource",
               "sidebar": "tutorialSidebar"
             },
             {

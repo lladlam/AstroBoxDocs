@@ -1,0 +1,30 @@
+.bannerLink {
+  display: block;
+  margin: 0 0 1.5rem 0; /* 顶部不留间距，底部留间距 */
+  transition: transform 0.2s ease-in-out;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bannerLink:hover {
+  transform: scale(1.01);
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 手机端优化 */
+@media (max-width: 768px) {
+  .bannerLink {
+    margin: 0 0 1rem 0;
+    border-radius: 0; /* 手机端横向撑满，去掉圆角可能更有视觉冲击力，看你喜好 */
+  }
+  .bannerImage {
+    border-radius: 0;
+  }
+}

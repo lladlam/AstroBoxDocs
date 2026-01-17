@@ -4,87 +4,9 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
-@font-face {
-  font-family: 'MiSans';
-  src: url('./fonts/MiSansVF.ttf') format('truetype-variations');
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-}
-
+/* 1. 全局变量定义区 */
 :root {
-  --ifm-font-family-base: 'MiSans', system-ui, -apple-system, sans-serif;
-  --ifm-font-weight-base: 450; 
-  --ifm-font-weight-bold: 700;
-}
-
-/* src/css/custom.css */
-
-body {
-
-  -webkit-font-smoothing: antialiased;
-
-  -moz-osx-font-smoothing: grayscale;
-
-  text-rendering: optimizeLegibility;
-
-  font-variation-settings: "wght" var(--ifm-font-weight-base);
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  body {
-    -webkit-font-smoothing: subpixel-antialiased;
-  }
-}
-
-body {
-  --base-wght: 450; 
-  font-variation-settings: "wght" var(--base-wght);
-}
-
-strong, b, h1, h2, h3, h4, h5, h6 {
-  --bold-wght: 650; 
-  font-variation-settings: "wght" var(--bold-wght);
-  font-weight: normal;
-}
-
-.admonition-heading strong {
-  font-variation-settings: "wght" 800;
-}
-
-h1, h2, h3, h4, h5, h6 {
-
-  font-variation-settings: "wght" 650;
-  line-height: 1.25;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  letter-spacing: -0.02em; 
-}
-
-h1 {
-  font-variation-settings: "wght" 750;
-  font-size: 2.5rem;
-  margin-top: 0; 
-}
-
-h2 {
-  font-variation-settings: "wght" 700;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid var(--ifm-color-emphasis-200);
-}
-
-h3 {
-  font-variation-settings: "wght" 600;
-}
-
-[data-theme='dark'] h1, 
-[data-theme='dark'] h2, 
-[data-theme='dark'] h3 {
-  color: #e3e3e3;
-}
-
-:root {
+  /* 品牌色定义 */
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -94,9 +16,29 @@ h3 {
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* 字体配置：确保使用 "MiSans VF" (匹配你的 result.css) */
+  --ifm-font-family-base: 
+    "MiSans VF",             /* 第一优先级：切片字体 */
+    "PingFang SC",           /* iOS/macOS 系统回退 */
+    "HarmonyOS Sans SC",     /* 鸿蒙/Android 优化回退 */
+    "Microsoft YaHei UI",    /* Windows 最佳回退 */
+    "-apple-system", 
+    "BlinkMacSystemFont", 
+    "system-ui", 
+    "sans-serif";
+
+  /* 代码块字体 */
+  --ifm-font-family-monospace: 
+    "JetBrains Mono", 
+    "Cascadia Code", 
+    "Menlo", 
+    "Monaco", 
+    "Consolas", 
+    monospace;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* 2. 暗黑模式颜色定义 */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -108,116 +50,32 @@ h3 {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-mark {
-  background: linear-gradient(180deg, transparent 50%, rgba(255, 235, 59, 0.5) 50%);
-  padding: 0 4px; 
-    border-radius: 4px;
-    transition: background 0.3s ease;
-  color: inherit;
-  padding: 0;
+/* 3. 页面组件字体适配 */
+.features_src-components-HomepageFeatures-styles-module__features {
+  font-family: var(--ifm-font-family-base);
 }
 
-[data-theme='dark'] mark {
-  background: linear-gradient(180deg, transparent 50%, rgba(255, 167, 38, 0.4) 50%);
-  padding: 0 4px;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-  color: inherit;
-}
-
-mark.pink {
-  background: linear-gradient(180deg, transparent 50%, rgba(240, 98, 146, 0.4) 50%);
-}
-
-mark.orange {
-  background: linear-gradient(180deg, transparent 50%, rgba(255, 112, 67, 0.4) 50%);
-}
-
-[data-theme='dark'] mark.pink {
-  background: linear-gradient(180deg, transparent 50%, rgba(244, 143, 177, 0.3) 50%);
-}
-[data-theme='dark'] mark.orange {
-  background: linear-gradient(180deg, transparent 50%, rgba(255, 138, 101, 0.3) 50%);
-}
-
-.admonition {
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  border-left-width: 6px; 
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-}
-
-.admonition-note {
-  border-left-color: #3498db;
-  background-color: rgba(52, 152, 219, 0.05);
-}
-
-.admonition-tip {
-  border-left-color: #2ecc71;
-  background-color: rgba(46, 204, 113, 0.05);
-}
-
-.admonition-heading {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.9em;
-}
-
-[data-theme='dark'] .admonition {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-.prism-code {
-  border-radius: 12px !important; 
-  padding: 1.2rem !important;
-  font-size: 0.95rem;
-  font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module,
-[class*='codeBlockTitle'] {
-  background-color: #24292e !important; 
-  color: #ffffff !important;
-  border-top-left-radius: 12px !important;
-  border-top-right-radius: 12px !important;
-  padding: 0.6rem 1.2rem !important;
-  font-weight: 600;
-  font-size: 0.85rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-[class*='codeBlockContainer'] [class*='codeBlockContent'] {
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
-}
-
-.docusaurus-highlight-code-line {
-  background-color: rgba(255, 255, 255, 0.1) !important; 
-  display: block;
-  margin: 0 -1.2rem;
-  padding: 0 1.2rem;
-  border-left: 4px solid #3578e5; 
-}
-
-.prism-code::-webkit-scrollbar {
-  height: 8px;
+/* 4. 全局滚动条美化 */
+::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
-.prism-code::-webkit-scrollbar-track {
+
+::-webkit-scrollbar-track {
   background: transparent;
 }
-.prism-code::-webkit-scrollbar-thumb {
-  background: rgba(120, 120, 120, 0.3);
+
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.3);
   border-radius: 10px;
+  transition: background 0.3s ease;
 }
-.prism-code::-webkit-scrollbar-thumb:hover {
+
+::-webkit-scrollbar-thumb:hover {
   background: rgba(120, 120, 120, 0.5);
 }
 
+/* 5. 代码块增强样式 */
 [data-theme='dark'] .prism-code {
   background-color: #1e1e1e !important; 
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -226,14 +84,18 @@ mark.orange {
 
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(100, 150, 255, 0.15) !important; 
-  border-left-color: #4dabf7;
+  border-left: 4px solid #4dabf7;
 }
 
+/* 6. 删除线样式美化 (del/s 标签) */
 del, s {
-  color: var(--ifm-color-emphasis-500); 
+  color: var(--ifm-color-emphasis-600); 
   text-decoration: line-through;
+  text-decoration-color: currentColor;
   opacity: 0.7; 
   transition: opacity 0.3s ease; 
+  /* 针对变体字体的细体字重设置，让删除线看起来更优雅 */
+  font-variation-settings: "wght" 350; 
 }
 
 del:hover, s:hover {
@@ -242,48 +104,498 @@ del:hover, s:hover {
 
 [data-theme='dark'] del, 
 [data-theme='dark'] s {
-  color: var(--ifm-color-emphasis-600);
   opacity: 0.5;
 }
 
-del, s {
-  font-variation-settings: "wght" 300; 
+/* 自定义 Admonitions (提示框) 样式 */
+.admonition {
+  border-radius: 8px;
+  border-left-width: 4px;
+  border-left-style: solid;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-family: var(--ifm-font-family-base);
 }
 
-del {
-  color: #999;
-  text-decoration: line-through;
-  text-decoration-color: rgba(255, 170, 255, 0.5); 
-  text-decoration-thickness: 5px; 
+/* 标题样式 */
+.admonition-heading {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
-del, s {
-  color: var(--ifm-color-emphasis-500);
-  opacity: 0.6;
-  font-variation-settings: "wght" 350; 
-  text-decoration: line-through;
-  text-decoration-color: currentColor; 
-  
+.admonition-icon {
+  margin-right: 0.5rem;
+}
+
+/* --- 不同类型的颜色适配 --- */
+
+/* Note (默认/提示) */
+.admonition-note {
+  background-color: rgba(62, 175, 124, 0.1);
+  border-left-color: #3eaf7c;
+  color: #2c3e50;
+}
+[data-theme='dark'] .admonition-note {
+  background-color: rgba(62, 175, 124, 0.15);
+  color: #e2e8f0;
+}
+
+/* Tip (建议/技巧) */
+.admonition-tip {
+  background-color: rgba(102, 126, 234, 0.1);
+  border-left-color: #667eea;
+}
+
+/* Info (信息) */
+.admonition-info {
+  background-color: rgba(0, 184, 212, 0.1);
+  border-left-color: #00b8d4;
+}
+
+/* Warning (警告) */
+.admonition-warning {
+  background-color: rgba(255, 152, 0, 0.1);
+  border-left-color: #ff9800;
+}
+
+/* Danger (危险) */
+.admonition-danger {
+  background-color: rgba(255, 82, 82, 0.1);
+  border-left-color: #ff5252;
+}
+
+/* 隐藏标题的特殊处理：如果不想显示标题，可以给文本微调 */
+.admonition-content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+
+.admonition {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admonition:hover {
+  transform: translateX(4px); /* 悬停时向右微动 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 强制所有正文容器使用定义的字体变量 */
+body, 
+article, 
+.markdown {
+  font-family: var(--ifm-font-family-base) !important;
+}
+
+/* --- 1. 基础样式与默认黄色 (Yellow) --- */
+mark {
+  background-color: rgba(255, 225, 0, 0.3);
+  border-bottom: 2px solid rgba(255, 200, 0, 0.8);
+  color: inherit;
+  padding: 0 4px;
+  margin: 0 2px;
+  border-radius: 4px;
   transition: all 0.3s ease;
-  cursor: help; 
+  font-weight: 500;
 }
 
+[data-theme='dark'] mark {
+  background-color: rgba(255, 217, 0, 0.2);
+  border-bottom-color: rgba(255, 217, 0, 0.5);
+  color: #fff;
+}
+
+mark:hover {
+  background-color: rgba(255, 225, 0, 0.45);
+}
+
+/* --- 2. 粉色高亮 (Pink) --- */
+mark.pink {
+  background-color: rgba(255, 182, 193, 0.4); /* 浅粉色 */
+  border-bottom: 2px solid rgba(255, 105, 180, 0.7); /* 深粉色底线 */
+}
+
+[data-theme='dark'] mark.pink {
+  background-color: rgba(255, 105, 180, 0.25);
+  border-bottom-color: rgba(255, 105, 180, 0.5);
+}
+
+mark.pink:hover {
+  background-color: rgba(255, 182, 193, 0.6);
+}
+
+/* --- 3. 橙色高亮 (Orange) --- */
+mark.orange {
+  background-color: rgba(255, 165, 0, 0.3); /* 橙色 */
+  border-bottom: 2px solid rgba(255, 140, 0, 0.7); /* 深橙色底线 */
+}
+
+[data-theme='dark'] mark.orange {
+  background-color: rgba(255, 140, 0, 0.25);
+  border-bottom-color: rgba(255, 140, 0, 0.5);
+}
+
+mark.orange:hover {
+  background-color: rgba(255, 165, 0, 0.5);
+}
+
+/* --- 删除线 (del/s) 自动恢复样式 --- */
+
+del, s {
+  /* 默认状态：半透明、细体、灰色 */
+  text-decoration: line-through;
+  text-decoration-color: currentColor; /* 删除线颜色跟随文字 */
+  opacity: 0.5;                        /* 明显的半透明感 */
+  transition: all 0.3s ease;           /* 增加 0.3 秒平滑过渡动画 */
+  
+  /* 针对 MiSans VF 的细体设置：wght 300 是比较轻量的档位 */
+  font-variation-settings: "wght" 300; 
+  filter: blur(0.2px);                 /* 默认状态带一点点模糊（可选，更有遮盖感） */
+}
+
+/* 鼠标移入时：恢复原样 */
 del:hover, s:hover {
-  color: var(--ifm-color-emphasis-900);
-  opacity: 1;
-  font-variation-settings: "wght" 450; 
-  text-decoration: none;
-  text-decoration-color: rgba(255, 170, 255, 0.3); 
+  opacity: 1;                          /* 恢复完全不透明 */
+  font-variation-settings: "wght" 450; /* 恢复到标准字重（MiSans Regular 约 450） */
+  filter: blur(0);                     /* 去除模糊 */
+  cursor: help;                        /* 鼠标指针变为问号，提示用户可读 */
 }
 
+/* 暗黑模式下的微调 */
 [data-theme='dark'] del, 
 [data-theme='dark'] s {
-  color: var(--ifm-color-emphasis-600);
-  opacity: 0.4;
+  opacity: 0.4;                        /* 暗黑模式下默认更暗一点 */
+}
+
+/* --- 通用列表基础优化 --- */
+article ul, 
+article ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+article li {
+  margin-bottom: 0.8rem; /* 增加行间距，提升阅读呼吸感 */
+  line-height: 1.7;
+  position: relative;
+}
+
+/* --- 无序列表 (ul) 高级化 --- */
+article ul {
+  list-style: none; /* 去掉默认黑圆点 */
+}
+
+article ul li::before {
+  content: "•"; /* 自定义符号 */
+  color: var(--ifm-color-primary); /* 使用品牌色 */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  transition: transform 0.2s ease;
+}
+
+/* 悬停时小图标微动 */
+article li:hover::before {
+  transform: scale(1.5);
+}
+
+/* --- 有序列表 (ol) 高级化 --- */
+article ol {
+  counter-reset: my-counter; /* 自定义计数器 */
+  list-style: none;
+}
+
+article ol li {
+  counter-increment: my-counter;
+}
+
+article ol li::before {
+  content: counter(my-counter);
+  /* 设计一个精致的数字背板 */
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darker);
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 1.4rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  border-radius: 50%; /* 圆形 */
+  display: inline-block;
+  margin-left: -1.8rem;
+  margin-right: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  vertical-align: middle;
+}
+
+/* 暗黑模式适配 */
+[data-theme='dark'] article ol li::before {
+  background-color: var(--ifm-color-primary-darker);
+  color: #fff;
+}
+
+/* --- 嵌套列表优化 (让二级列表缩进更优雅) --- */
+article li ul, 
+article li ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-left: 1px dashed var(--ifm-color-emphasis-300); /* 增加侧边引导线 */
+  padding-left: 1.2rem;
 }
 
 [data-theme='dark'] del:hover, 
 [data-theme='dark'] s:hover {
-  color: #ffffff;
   opacity: 1;
+  color: var(--ifm-color-primary-light); /* 悬停时甚至可以带点品牌色，更亮眼 */
+}
+
+/* --- 列表高级化：对齐与背景 --- */
+article ul, article ol {
+  padding: 1rem 1rem 1rem 2.5rem;
+  background: rgba(var(--ifm-font-color-base-rgb), 0.03); /* 浅灰色背景，增加突出度 */
+  border-radius: 12px;
+  border: 1px solid rgba(var(--ifm-font-color-base-rgb), 0.05);
+  margin: 1.5rem 0;
+}
+
+[data-theme='dark'] article ul, 
+[data-theme='dark'] article ol {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+article li {
+  padding: 0.2rem 0;
+  /* 确保圆点/数字与内容在视觉上严格对齐 */
+  display: list-item; 
+  transition: all 0.2s ease;
+}
+
+/* 悬停时列表项背景微变，增强交互感 */
+article li:hover {
+  transform: translateX(5px);
+  color: var(--ifm-color-primary);
+}
+
+/* 针对有序列表数字的对齐优化 */
+article ol {
+  list-style-position: outside;
+}
+
+/* --- 上一页/下一页按钮美化 --- */
+.pagination-nav__link {
+  border: 1px solid var(--ifm-color-emphasis-200) !important;
+  border-radius: 16px !important; /* 超大圆角 */
+  padding: 1.2rem !important;
+  transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1) !important;
+  background: var(--ifm-background-color);
+  overflow: hidden;
+  position: relative;
+}
+
+/* 标题文字加粗 */
+.pagination-nav__link .pagination-nav__label {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--ifm-color-primary);
+}
+
+/* 副标题（上一篇/下一篇） */
+.pagination-nav__sublabel {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+/* 悬停效果：品牌色阴影与轻微浮起 */
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary) !important;
+  box-shadow: 0 10px 20px rgba(46, 133, 85, 0.15) !important; /* 品牌色调的阴影 */
+  transform: translateY(-3px);
+  text-decoration: none !important;
+}
+
+[data-theme='dark'] .pagination-nav__link:hover {
+  box-shadow: 0 10px 25px rgba(37, 194, 160, 0.2) !important;
+  background: rgba(37, 194, 160, 0.05);
+}
+
+/* 箭头修饰：让它更有指向感 */
+.pagination-nav__link--next::after {
+  content: ' →';
+  opacity: 0;
+  transition: all 0.3s;
+  position: absolute;
+  right: 1.2rem;
+}
+
+.pagination-nav__link--next:hover::after {
+  opacity: 1;
+  right: 0.8rem;
+}
+
+/* --- 底栏 (Footer) 视觉重构 --- */
+.footer {
+  background-color: #f8f9fa; /* 浅灰色背景，区分正文 */
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .footer {
+  background-color: #121212;
+  border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+/* 底栏链接标题 */
+.footer__title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  color: var(--ifm-color-primary);
+}
+
+/* 链接交互优化 */
+.footer__link-item {
+  line-height: 2;
+  transition: all 0.2s;
+  opacity: 0.7;
+}
+
+.footer__link-item:hover {
+  opacity: 1;
+  padding-left: 5px; /* 悬停时右移 */
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+/* 版权信息区域 */
+.footer__copyright {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  opacity: 0.5;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 2rem;
+}
+
+/* 压缩列表间隙，使其比正文更紧凑 */
+article ul, article ol {
+  margin: 0.5rem 0; /* 缩小列表与上下正文的间距 */
+  padding: 0.8rem 1rem 0.8rem 2.2rem; /* 内部填充稍微收紧 */
+}
+
+article li {
+  margin-bottom: 0.3rem !important; /* 强制压缩列表项之间的行间距 */
+  line-height: 1.5; /* 稍微减小行高 */
+}
+
+/* 嵌套列表的间距进一步缩小 */
+article li > ul, 
+article li > ol {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+/* 左侧菜单点击动画 */
+.menu__list-item {
+  margin-top: 2px;
+}
+
+.menu__link {
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__link--active {
+  background-color: var(--ifm-color-primary-lightest) !important;
+  color: var(--ifm-color-primary-darker) !important;
+  font-weight: 700;
+}
+
+/* 悬停时稍微向右移动，增加指向感 */
+.menu__link:hover {
+  background-color: rgba(var(--ifm-color-primary-rgb), 0.1);
+  padding-left: 1rem;
+}
+
+@media (max-width: 996px) {
+  .navbar-sidebar {
+    width: 80vw !important; /* 宽度不再撑满全屏 */
+    max-width: 300px;
+    border-radius: 0 20px 20px 0; /* 增加右侧大圆角 */
+    box-shadow: 15px 0 40px rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(15px); /* 侧滑菜单毛玻璃效果 */
+  }
+  
+  /* 调整遮罩层，让它带点模糊感 */
+  .navbar-sidebar__backdrop {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+  }
+}
+
+/* 2. 列表 (ul/ol) 紧凑化与背景块效果 */
+article ul, article ol {
+  margin: 1rem 0;
+  padding: 0.8rem 1rem 0.8rem 2.2rem; 
+  background: rgba(var(--ifm-font-color-base-rgb), 0.03); /* 列表区域独立浅背景 */
+  border-radius: 12px;
+  border: 1px solid rgba(var(--ifm-font-color-base-rgb), 0.06);
+}
+
+[data-theme='dark'] article ul, 
+[data-theme='dark'] article ol {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+article li {
+  margin-bottom: 0.2rem !important; /* 强制压缩行间距，使其比正文更紧凑 */
+  line-height: 1.5;
+}
+
+/* 3. 上一页/下一页按钮 (Pagination) 交互美化 */
+.pagination-nav__link {
+  border-radius: 16px !important; /* 大圆角 */
+  padding: 1.2rem !important;
+  transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1) !important;
+  border: 1px solid var(--ifm-color-emphasis-200) !important;
+  background: var(--ifm-background-color);
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary) !important;
+  transform: translateY(-4px); /* 悬停时向上浮动 */
+  box-shadow: 0 10px 20px rgba(46, 133, 85, 0.15) !important; /* 品牌色调阴影 */
+  text-decoration: none !important;
+}
+
+/* 4. 右侧目录 (TOC) 激活项微调（可选） */
+.table-of-contents__link--active {
+  font-weight: 700;
+  color: var(--ifm-color-primary) !important;
+}
+
+/* 让文档中的表格看起来更高级 */
+article table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-variant-numeric: tabular-nums; /* 让数字对齐更工整 */
+}
+
+article th, article td {
+  padding: 12px 15px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+article tr:nth-child(even) {
+  background-color: rgba(var(--ifm-font-color-base-rgb), 0.02);
 }

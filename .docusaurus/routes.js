@@ -119,19 +119,37 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '63b'),
+    component: ComponentCreator('/docs', 'a25'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '9d5'),
+        component: ComponentCreator('/docs', '105'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'bc5'),
+            component: ComponentCreator('/docs', '92a'),
             routes: [
+              {
+                path: '/docs/astrobox/account',
+                component: ComponentCreator('/docs/astrobox/account', 'f7f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/astrobox/connect',
+                component: ComponentCreator('/docs/astrobox/connect', 'ad2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs/astrobox/disclaimer',
                 component: ComponentCreator('/docs/astrobox/disclaimer', 'bec'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/astrobox/resource',
+                component: ComponentCreator('/docs/astrobox/resource', 'bef'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
