@@ -35,7 +35,7 @@
       "htmlLang": "zh-TW",
       "calendar": "gregory",
       "path": "zh-TW",
-      "translate": false,
+      "translate": true,
       "url": "https://abdocs.lladlam.top",
       "baseUrl": "/zh-TW/"
     },
@@ -45,7 +45,7 @@
       "htmlLang": "ja",
       "calendar": "gregory",
       "path": "ja",
-      "translate": false,
+      "translate": true,
       "url": "https://abdocs.lladlam.top",
       "baseUrl": "/ja/"
     }
