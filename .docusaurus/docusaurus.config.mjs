@@ -37,11 +37,19 @@ export default {
     "defaultLocale": "zh",
     "locales": [
       "zh",
-      "en"
+      "en",
+      "zh-TW",
+      "ja"
     ],
     "localeConfigs": {
       "en": {
         "htmlLang": "en-GB"
+      },
+      "zh-TW": {
+        "htmlLang": "zh-TW"
+      },
+      "ja": {
+        "htmlLang": "ja"
       }
     },
     "path": "i18n"

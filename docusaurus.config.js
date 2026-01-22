@@ -21,10 +21,16 @@ const config = {
 
   i18n: {
     defaultLocale: 'zh',
-    locales: ['zh', 'en'], // 添加英文语言环境
+    locales: ['zh', 'en', 'zh-TW', 'ja'], // 添加中文繁体和日语
     localeConfigs: {
       en: {
-        htmlLang: 'en-GB', // 为英文设置 htmlLang
+        htmlLang: 'en-GB',
+      },
+      'zh-TW': {
+        htmlLang: 'zh-TW',
+      },
+      ja: {
+        htmlLang: 'ja',
       },
     },
   },

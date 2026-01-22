@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.AstroBox": {
+    "message": "AstroBox",
+    "description": "The label for category 'AstroBox' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.AstroBox For iOS": {
+    "message": "AstroBox For iOS",
+    "description": "The label for category 'AstroBox For iOS' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.快应用": {
+    "message": "QuickApp",
+    "description": "The label for category 'QuickApp' in sidebar 'tutorialSidebar'"
+  }
+}

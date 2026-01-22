@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "AstroBoxサードパーティードキュメント",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "AstroBox ロゴ",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.文档": {
+    "message": "ドキュメント",
+    "description": "Navbar item with label 文档"
+  }
+}

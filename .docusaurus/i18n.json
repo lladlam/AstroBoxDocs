@@ -2,7 +2,9 @@
   "defaultLocale": "zh",
   "locales": [
     "zh",
-    "en"
+    "en",
+    "zh-TW",
+    "ja"
   ],
   "path": "i18n",
   "currentLocale": "zh",
@@ -13,7 +15,7 @@
       "htmlLang": "zh",
       "calendar": "gregory",
       "path": "zh",
-      "translate": false,
+      "translate": true,
       "url": "https://abdocs.lladlam.top",
       "baseUrl": "/"
     },
@@ -26,6 +28,26 @@
       "translate": true,
       "url": "https://abdocs.lladlam.top",
       "baseUrl": "/en/"
+    },
+    "zh-TW": {
+      "label": "中文（台灣）",
+      "direction": "ltr",
+      "htmlLang": "zh-TW",
+      "calendar": "gregory",
+      "path": "zh-TW",
+      "translate": false,
+      "url": "https://abdocs.lladlam.top",
+      "baseUrl": "/zh-TW/"
+    },
+    "ja": {
+      "label": "日本語",
+      "direction": "ltr",
+      "htmlLang": "ja",
+      "calendar": "gregory",
+      "path": "ja",
+      "translate": false,
+      "url": "https://abdocs.lladlam.top",
+      "baseUrl": "/ja/"
     }
   }
 }

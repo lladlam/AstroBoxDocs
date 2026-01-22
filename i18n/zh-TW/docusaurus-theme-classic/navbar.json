@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "AstroBox 第三方說明文件",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "AstroBox 標誌",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.文档": {
+    "message": "文件",
+    "description": "Navbar item with label 文档"
+  }
+}

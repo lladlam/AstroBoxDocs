@@ -138,5 +138,12 @@
   "theme.SearchPage.fetchingNewResults": "正在获取新的搜索结果...",
   "theme.SearchPage.inputLabel": "搜索",
   "theme.SearchPage.inputPlaceholder": "在此输入搜索词",
-  "theme.SearchPage.noResultsText": "未找到结果"
+  "theme.SearchPage.noResultsText": "未找到结果",
+  "homepage.startJourney": "让我们开始AstroBox之旅吧! 🚀️",
+  "homepage.feature.crossPlatform.title": "跨平台支持",
+  "homepage.feature.crossPlatform.description": "AstroBox 基于 Rust & Tauri 以及 Next.js 构建，一套代码全端可用。支持 {platformList} 等多个平台，打破传统工具“仅限 Android”的限制。",
+  "homepage.feature.richResources.title": "资源社区丰富",
+  "homepage.feature.richResources.description": "不仅有官方数据源，还有 N 多个插件提供数据源支持。可下载海量表盘、快应用，{oneClickInstall}，打破数据源壁垒。",
+  "homepage.feature.allRoundDeviceManagement.title": "设备管理全能",
+  "homepage.feature.allRoundDeviceManagement.description": "安装表盘、快应用，刷写固件，{dragAndDrop}，按顺序一键安装。连接设备后，部分手机互联操作可由 AstroBox 接管，无需频繁切换应用。"
 }

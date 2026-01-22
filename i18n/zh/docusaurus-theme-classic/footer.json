@@ -1,0 +1,46 @@
+{
+  "link.title.链接": {
+    "message": "链接",
+    "description": "The title of the footer links column with title=链接 in the footer"
+  },
+  "link.title.更多": {
+    "message": "更多",
+    "description": "The title of the footer links column with title=更多 in the footer"
+  },
+  "link.title.友链": {
+    "message": "友链",
+    "description": "The title of the footer links column with title=友链 in the footer"
+  },
+  "link.item.label.QQ群": {
+    "message": "QQ群",
+    "description": "The label of footer link with label=QQ群 linking to https://qm.qq.com/q/JceseeqRk4"
+  },
+  "link.item.label.AstroBox爱发电": {
+    "message": "AstroBox爱发电",
+    "description": "The label of footer link with label=AstroBox爱发电 linking to https://afdian.com/a/astralsight"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/lladlam/astroboxdocs"
+  },
+  "link.item.label.聪明猫的爱发电": {
+    "message": "聪明猫的爱发电",
+    "description": "The label of footer link with label=聪明猫的爱发电 linking to https://afdian.com/item/18dde340bc6911f0a0515254001e7c00"
+  },
+  "link.item.label.lladlam的爱发电": {
+    "message": "lladlam的爱发电",
+    "description": "The label of footer link with label=lladlam的爱发电 linking to https://www.lladlam.top/posts/afdiandocs/"
+  },
+  "link.item.label.米坛社区": {
+    "message": "米坛社区",
+    "description": "The label of footer link with label=米坛社区 linking to https://bandbbs.cn"
+  },
+  "link.item.label.小米社区": {
+    "message": "小米社区",
+    "description": "The label of footer link with label=小米社区 linking to https://xiaomi.cn"
+  },
+  "copyright": {
+    "message": "版权所有 © 2026 AstralSightStudios , The site made with ❤ by lladlam ，Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}
