@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Translate from '@docusaurus/Translate'; // 导入 Translate 组件
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -20,7 +21,11 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/start">
-            让我们开始AstroBox之旅吧! 🚀️
+            <Translate
+              id="homepage.startJourney"
+              description="The homepage hero button to start AstroBox journey">
+              让我们开始AstroBox之旅吧! 🚀️
+            </Translate>
           </Link>
         </div>
       </div>

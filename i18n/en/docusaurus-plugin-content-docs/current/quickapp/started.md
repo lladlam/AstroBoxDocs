@@ -1,0 +1,3 @@
+# Nothing here yet...
+
+Quick app creators are welcome to add documentation for their quick apps here. Please contact lladlam@lladlam.top

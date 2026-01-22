@@ -36,10 +36,15 @@ export default {
   "i18n": {
     "defaultLocale": "zh",
     "locales": [
-      "zh"
+      "zh",
+      "en"
     ],
-    "path": "i18n",
-    "localeConfigs": {}
+    "localeConfigs": {
+      "en": {
+        "htmlLang": "en-GB"
+      }
+    },
+    "path": "i18n"
   },
   "presets": [
     [
@@ -106,6 +111,12 @@ export default {
           "sidebarId": "tutorialSidebar",
           "position": "left",
           "label": "文档"
+        },
+        {
+          "type": "localeDropdown",
+          "position": "right",
+          "dropdownItemsBefore": [],
+          "dropdownItemsAfter": []
         }
       ],
       "hideOnScroll": false

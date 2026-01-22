@@ -21,7 +21,12 @@ const config = {
 
   i18n: {
     defaultLocale: 'zh',
-    locales: ['zh'],
+    locales: ['zh', 'en'], // 添加英文语言环境
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB', // 为英文设置 htmlLang
+      },
+    },
   },
 
   presets: [
@@ -88,6 +93,10 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '文档',
+          },
+          {
+            type: 'localeDropdown', // 添加语言切换下拉菜单
+            position: 'right',
           },
         ],
       },

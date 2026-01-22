@@ -1,7 +1,8 @@
 {
   "defaultLocale": "zh",
   "locales": [
-    "zh"
+    "zh",
+    "en"
   ],
   "path": "i18n",
   "currentLocale": "zh",
@@ -15,6 +16,16 @@
       "translate": false,
       "url": "https://abdocs.lladlam.top",
       "baseUrl": "/"
+    },
+    "en": {
+      "label": "English",
+      "direction": "ltr",
+      "htmlLang": "en-GB",
+      "calendar": "gregory",
+      "path": "en",
+      "translate": true,
+      "url": "https://abdocs.lladlam.top",
+      "baseUrl": "/en/"
     }
   }
 }

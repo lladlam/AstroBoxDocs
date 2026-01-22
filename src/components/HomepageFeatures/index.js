@@ -2,37 +2,64 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import PurchaseBanner from '@site/src/components/PurchaseBanner';
+import Translate, {translate} from '@docusaurus/Translate'; // 导入 translate
 
 const FeatureList = [
   {
-    title: '跨平台支持',
+    title: (
+      <Translate id="homepage.feature.crossPlatform.title" description="Homepage feature title for cross-platform support">
+        跨平台支持
+      </Translate>
+    ),
     // 由于AstroBox官网图片为webp格式，无法转化为svg，故我进行了图片导入魔改
     img: require('@site/static/img/astronaut.png').default,
     description: (
       <>
-        AstroBox 基于 Rust & Tauri 以及 Next.js 构建，一套代码全端可用。
-        支持 <strong>Windows、macOS、Linux、Android、iOS、iPadOS</strong> 等多个平台，
-        打破传统工具“仅限 Android”的限制。
+        {translate({
+          message: 'AstroBox 基于 Rust & Tauri 以及 Next.js 构建，一套代码全端可用。支持 {platformList} 等多个平台，打破传统工具“仅限 Android”的限制。',
+          id: 'homepage.feature.crossPlatform.description',
+          description: 'Homepage feature description for cross-platform support',
+        }, {
+          platformList: <strong>Windows、macOS、Linux、Android、iOS、iPadOS</strong>,
+        })}
       </>
     ),
   },
   {
-    title: '资源社区丰富',
+    title: (
+      <Translate id="homepage.feature.richResources.title" description="Homepage feature title for rich resources community">
+        资源社区丰富
+      </Translate>
+    ),
     img: require('@site/static/img/plugin.png').default,
     description: (
       <>
-        不仅有官方数据源，还有 N 多个插件提供数据源支持。
-        可下载海量表盘、快应用，<strong>一键批量安装</strong>，打破数据源壁垒。
+        {translate({
+          message: '不仅有官方数据源，还有 N 多个插件提供数据源支持。可下载海量表盘、快应用，{oneClickInstall}，打破数据源壁垒。',
+          id: 'homepage.feature.richResources.description',
+          description: 'Homepage feature description for rich resources community',
+        }, {
+          oneClickInstall: <strong>一键批量安装</strong>,
+        })}
       </>
     ),
   },
   {
-    title: '设备管理全能',
+    title: (
+      <Translate id="homepage.feature.allRoundDeviceManagement.title" description="Homepage feature title for all-round device management">
+        设备管理全能
+      </Translate>
+    ),
     img: require('@site/static/img/device.png').default,
     description: (
       <>
-        安装表盘、快应用，刷写固件，<strong>拖拽文件即可加入任务队列</strong>，按顺序一键安装。
-        连接设备后，部分手机互联操作可由 AstroBox 接管，无需频繁切换应用。
+        {translate({
+          message: '安装表盘、快应用，刷写固件，{dragAndDrop}，按顺序一键安装。连接设备后，部分手机互联操作可由 AstroBox 接管，无需频繁切换应用。',
+          id: 'homepage.feature.allRoundDeviceManagement.description',
+          description: 'Homepage feature description for all-round device management',
+        }, {
+          dragAndDrop: <strong>拖拽文件即可加入任务队列</strong>,
+        })}
       </>
     ),
   },
