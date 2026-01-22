@@ -4,13 +4,14 @@ sidebar_position: 1
 
 # Var表盘接入文档（V0.0.1）
 
-:::tips 请注意
+:::tip 请注意
 
-此文档来源于azumachiaki的![雨雀文档](https://www.yuque.com/azumachiaki/uu6lym/qi0rq5xae43759so?singleDoc#%20%E3%80%8AVar%E8%A1%A8%E7%9B%98%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88V0.0.1%EF%BC%89%E3%80%8B)，<mark class="pink">本文仅为转载，详细信息请联系azumachiaki@163.com</mark>
+此文档来源于azumachiaki的[雨雀文档](https://www.yuque.com/azumachiaki/uu6lym/qi0rq5xae43759so?singleDoc#%20%E3%80%8AVar%E8%A1%A8%E7%9B%98%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88V0.0.1%EF%BC%89%E3%80%8B)，<mark class="pink">本文仅为转载，详细信息请联系azumachiaki@163.com</mark>
 
 本文作者azumachiaki，lladlam经过授权后转载，版权归azumachiaki所有
 
-<mark class"pink">本网站不对用户在第三方链接下载的任何资源负责</mark>
+<mark class="pink">本网站不对用户在第三方链接下载的任何资源负责</mark>
+
 :::
 
 ## 概述
@@ -31,19 +32,19 @@ sidebar_position: 1
 
 **对于深度合作**：很荣幸能得到您的赏识，我很乐意与您建立更加深度的合作，共同创作更加激动人心的内容。如果您有相关想法，欢迎随时联系我进行商讨。
 
-##获取资源
+## 获取资源
 
 在截至目前，我只制作了4种通用组件供公开使用，所以您的提议在现在显得尤为重要，这将帮助我创作出更多实用的组件规格
 
 组件参数：长100px，宽30px（横向放置的长方形），字号26px，文本颜色为白色，文本过长自动跑马灯处理
 
-下载链接：![点击下载](https://azumachiaki.com/varcell/v0.0.1/re.zip)
+下载链接：[点击下载](https://azumachiaki.com/varcell/v0.0.1/re.zip)
 
 ## 将组件导入到您的表盘
 
 目前最主流，功能最强大的表盘编辑器为开源编辑器Easyface，作者为m0tral，汉化作者：xinghengCN
 
-快速下载连接：![点此下载](https://azumachiaki.com/tools/ef.zip)
+快速下载连接：[点此下载](https://azumachiaki.com/tools/ef.zip)
 
 导入组件:
 
@@ -51,6 +52,6 @@ sidebar_position: 1
 
 2.将下载得到的lua组件放在_lua文件夹里面
 
-3.在工程里新建一个基础容器，然后重命名该容器为“app_lua%2Flua组件的文件名”容器大小应和组件大小相同。
+3.在工程里新建一个基础容器，然后重命名该容器为`app_lua%2Flua组件的文件名`容器大小应和组件大小相同。
 
 这样lua组件就成功的导入到了您的表盘项目

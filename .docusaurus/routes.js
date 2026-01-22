@@ -119,15 +119,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '5f4'),
+    component: ComponentCreator('/docs', '6c9'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '192'),
+        component: ComponentCreator('/docs', '1a8'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'e32'),
+            component: ComponentCreator('/docs', 'f7a'),
             routes: [
               {
                 path: '/docs/astrobox-for-ios/started',
@@ -178,6 +178,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/category/开发者文档',
+                component: ComponentCreator('/docs/category/开发者文档', '094'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/category/快应用',
                 component: ComponentCreator('/docs/category/快应用', '993'),
                 exact: true,
@@ -192,6 +198,12 @@ export default [
               {
                 path: '/docs/category/astrobox-for-ios',
                 component: ComponentCreator('/docs/category/astrobox-for-ios', '61b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/developer/VarDialAccess',
+                component: ComponentCreator('/docs/developer/VarDialAccess', '1d4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

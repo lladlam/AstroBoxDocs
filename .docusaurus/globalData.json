@@ -51,6 +51,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "developer/VarDialAccess",
+              "path": "/docs/developer/VarDialAccess",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "quickapp/started",
               "path": "/docs/quickapp/started",
               "sidebar": "tutorialSidebar"
@@ -73,6 +78,11 @@
             {
               "id": "/category/快应用",
               "path": "/docs/category/快应用",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/开发者文档",
+              "path": "/docs/category/开发者文档",
               "sidebar": "tutorialSidebar"
             }
           ],
