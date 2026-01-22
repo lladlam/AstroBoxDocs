@@ -4,13 +4,14 @@ sidebar_position: 1
 
 # Var Watchface Integration Document (V0.0.1)
 
-:::tips PLEASE NOTE
+:::tip PLEASE NOTE
 
-This document originates from azumachiaki's ![Yuque Document](https://www.yuque.com/azumachiaki/uu6lym/qi0rq5xae43759so?singleDoc#%20%E3%80%8AVar%E8%A1%A8%E7%9B%98%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88V0.0.1%EF%BC%89%E3%80%8B). <mark class="pink">This article is a repost only; for detailed information, please contact azumachiaki@163.com</mark>
+This document originates from azumachiaki's [Yuque Document](https://www.yuque.com/azumachiaki/uu6lym/qi0rq5xae43759so?singleDoc#%20%E3%80%8AVar%E8%A1%A8%E7%9B%98%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88V0.0.1%EF%BC%89%E3%80%8B). <mark class="pink">This article is a repost only; for detailed information, please contact azumachiaki@163.com</mark>
 
 Author: azumachiaki. Reposted by lladlam with authorization. Copyright belongs to azumachiaki.
 
 <mark class="pink">This website is not responsible for any resources downloaded by users from third-party links.</mark>
+
 :::
 
 ## Overview
@@ -21,7 +22,7 @@ Contact Email: azumachiaki@163.com
 
 ## Agreement
 
-<mark>**If you use my components to create related watchfaces, I may collect and publicly publish information related to your resources, such as download links or post addresses, so that other users can download or purchase them. If you do not wish for me to do this, please inform me in advance.**</mark>
+<mark>**If you use my components to create related watchfaces, I may collect and publicly publish information related to your resources (such as download links or post addresses) so that other users can download or purchase them. If you do not wish for me to do this, please inform me in advance.**</mark>
 
 **Suggestion**: To make it easier for users to find and use, I strongly recommend adding labels like (Var Integrated), (Var), or other easily identifiable marks to your work's title or tags.
 
@@ -37,18 +38,20 @@ As of now, I have only produced 4 types of general-purpose components for public
 
 Component Parameters: Length 100px, Width 30px (horizontal rectangle), Font size 26px, Text color white, Long text automatically handled with a marquee effect.
 
-Download Link: ![Click to Download](https://azumachiaki.com/varcell/v0.0.1/re.zip)
+Download Link: [Click to Download](https://azumachiaki.com/varcell/v0.0.1/re.zip)
 
 ## Importing Components into Your Watchface
 
 Currently, the most mainstream and powerful watchface editor is the open-source editor Easyface, created by m0tral, with Chinese localization by xinghengCN.
 
-Quick Download Link: ![Click here to Download](https://azumachiaki.com/tools/ef.zip)
+Quick Download Link: [Click here to Download](https://azumachiaki.com/tools/ef.zip)
 
 Importing Components:
 
 1. Create a folder named `app/lua` within your Easyface project folder.
-2. Place the downloaded `.lua` component into the `_lua` folder.
-3. Create a new basic container in the project, then rename the container to "app_lua%2F[filename of the lua component]". The container size should match the component size.
 
-The Lua component is now successfully imported into your watchface project.
+2. Place the downloaded lua component into the `_lua` folder.
+
+3. Create a new basic container in the project, then rename the container to ```app_lua%2F[filename of the lua component]```. The container size should match the component size.
+
+The lua component is now successfully imported into your watchface project.
