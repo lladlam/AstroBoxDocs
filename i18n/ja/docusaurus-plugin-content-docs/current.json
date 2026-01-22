@@ -12,7 +12,11 @@
     "description": "The label for category 'AstroBox For iOS' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.快应用": {
-    "message": "QuickApp",
+    "message": "快应用",
     "description": "The label for category '快应用' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.开发者文档": {
+	"message": "开发者文档",
+	"description": "The label for category '开发者文档' in sidebar 'tutorialSidebar'"
   }
 }
